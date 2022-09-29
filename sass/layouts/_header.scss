@@ -3,18 +3,20 @@
     background-color: var(--header-bg-color);
     border-bottom: 1px solid var(--line-color);
 
-    &>.link,
-    &>.header__contacts-icon {
-        
+    &__link {
+        //&>.header__contacts-icon {
+
+        @include transition (color, fill);
+
         color: var(--accent-color);
         fill: currentColor;
-        transition: color, fill 2500s cubic-bezier(0.4, 0, 0.2, 1);
+        //transition: color, fill 2500s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    & .link:hover,
-    & .link:focus {
-        color: var(--accent-color);
-        fill: var(--accent-color);
-    }
+    //& .link:hover,
+   // & .link:focus {
+    //    color: var(--accent-color);
+   //    fill: var(--accent-color);
+  //  }
 
 }

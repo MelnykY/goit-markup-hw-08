@@ -2,15 +2,12 @@
 @import "./utils/vars";
 @import "./utils/modern-normalize";
 @import "./utils/visually-hidden";
-@import "./utils/overlay";
 @import "./utils/mixins";
-
 
 
 //base styles
 @import "./base/base";
 @import "./base/reset";
-@import "./base/container";
 
 
 //layouts styles
@@ -30,6 +27,7 @@
 
 
 //components styles
+@import "./components/container";
 @import "./components/logo";
 @import "./components/header-contacts";
 @import "./components/socials";
@@ -37,3 +35,4 @@
 @import "./components/footer-btn";
 @import "./components/form-footer";
 @import "./components/form-modal-window";
+@import "./components/overlay";

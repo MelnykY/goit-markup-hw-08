@@ -379,11 +379,6 @@ a {
   display: flex;
 }
 
-.logo__container {
-  padding: 25px 0;
-  margin-right: 95px;
-}
-
 .header {
   background-color: var(--header-bg-color);
   border-bottom: 1px solid var(--line-color);
@@ -931,6 +926,10 @@ a {
 }
 .logo__header--contrast {
   color: var(--black-color);
+}
+.logo__container {
+  padding: 25px 0;
+  margin-right: 95px;
 }
 
 .footer__logo {
