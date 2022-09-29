@@ -8,7 +8,6 @@
 
         display: block;
         align-items: center;
-        padding: 32px 0;
         position: relative;
         font-size: 14px;
         line-height: calc(16 / 14);
@@ -44,7 +43,9 @@
         }
 
         & .link {
+            display: block;
             color: var(--heading-color);
+            padding: 32px 0;
         }
     }
 }

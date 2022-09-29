@@ -3,7 +3,7 @@
     &__list {
 
         @include flex(flex, null, null);
-
+        
         //display: flex;
         gap: 30px;
     }

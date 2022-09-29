@@ -11,6 +11,10 @@
         color: rgba(33, 33, 33, 1);
     }
 
+    &__group {
+        margin-bottom: 20px;
+    }
+
 
     &__field {
 
@@ -63,12 +67,11 @@
 
     &__icon {
 
-
         @include transition (fill);
 
         position: absolute;
-        left: 12px;
-        bottom: 11px;
+        left: 3%; //check
+        bottom: 18%; //check
         //transition-property: fill;
         //transition-duration: 250ms;
         //transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
