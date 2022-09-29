@@ -1,0 +1,11 @@
+@mixin flex ($d, $jc, $ai) {
+    display: $d;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin transition ($one: null, $two: null, $three: null, $time: 250ms, $func: cubic-bezier(0.4, 0, 0.2, 1)) {
+    transition-property: $one, $two, $three;
+    transition-duration: $time;
+    transition-timing-function: $func;
+}

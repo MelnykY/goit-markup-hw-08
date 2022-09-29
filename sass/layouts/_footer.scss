@@ -1,0 +1,106 @@
+.footer {
+
+    background-color: var(--footer-bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    & .address__link:hover,
+    & .address__link:focus {
+
+        color: var(--accent-color);
+    }
+
+    &__container {
+
+        @include flex(flex, null, baseline);
+        //display: flex;
+        //align-items: baseline;
+    }
+
+    &__contacts {
+        margin-right: 70px;
+    }
+
+    &__socials {
+        margin-right: auto;
+    }
+
+    &__title {
+
+        display: block;
+        font-size: 14px;
+        text-transform: uppercase;
+        line-height: calc(16.41 / 14);
+        color: var(--white-color);
+        font-weight: 700;
+        letter-spacing: 3%;
+        margin-bottom: 20px;
+    }
+
+    .footer__icon {
+
+        fill: var(--white-color);
+
+        &:hover,
+        &:focus {
+            background-color: var(--accent-color);
+        }
+    }
+}
+
+.address {
+
+    &__list {
+
+        display: block;
+        text-decoration: none;
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+
+    }
+
+    &__link {
+
+        @include transition (color);
+
+        display: block;
+        font-size: 14px;
+        line-height: calc(24 / 14);
+        color: var(--address-color);
+        letter-spacing: 0.03em;
+        font-style: normal;
+        //transition-property: color;
+        //transition-duration: 250ms;
+        //transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__item {
+        margin-bottom: 9px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+    }
+
+    &__text {
+        color: var(--white-color);
+        font-style: normal;
+    }
+
+    &__contact {
+
+        @include transition (color);
+
+        margin-bottom: 9px;
+        font-size: 14px;
+        line-height: calc(24 / 14);
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+        //transition-property: color;
+        //transition-duration: 250ms;
+        //transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+}

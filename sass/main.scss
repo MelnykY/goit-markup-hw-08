@@ -1,0 +1,40 @@
+//fonts
+//@import "./base/typography";
+
+//utils styles
+@import "./utils/vars";
+@import "./utils/visually-hidden";
+@import "./utils/overlay";
+@import "./utils/mixins";
+
+
+//base styles
+@import "./base/base";
+@import "./base/reset";
+@import "./base/container";
+
+
+//layouts styles
+///common
+@import "./layouts/header";
+@import "./layouts/navigation";
+@import "./layouts/modal-window";
+@import "./layouts/footer";
+///index-page
+@import "./layouts/hero";
+@import "./layouts/features";
+@import "./layouts/work";
+@import "./layouts/team";
+@import "./layouts/clients";
+///porfolio-page
+@import "./layouts/portfolio";
+
+
+//components styles
+@import "./components/logo";
+@import "./components/header-contacts";
+@import "./components/socials";
+@import "./components/portfolio-btns";
+@import "./components/footer-btn";
+@import "./components/form-footer";
+@import "./components/form-modal-window";

@@ -1,0 +1,33 @@
+.logo {
+
+    display: block;
+    padding: 24px 0;
+    margin-right: 91px;
+    font-family: var(--logo-font);
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    color: var(--accent-color);
+    font-weight: 700;
+    letter-spacing: 0.03em;
+
+    &__header--contrast {
+        color: var(--black-color);
+    }
+}
+
+.footer__logo {
+
+    display: block;
+    margin-bottom: 20px;
+    font-family: var(--logo-font);
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    color: var(--accent-color);
+    font-weight: 700;
+    letter-spacing: 0.03em;
+
+    &--contrast {
+        color: var(--white-color);
+        margin-bottom: 20px;
+    }
+}

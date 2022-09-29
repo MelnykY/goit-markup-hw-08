@@ -1,0 +1,40 @@
+.footer {
+
+    &__form {
+
+        @include flex (inline-flex, null, null);
+        //display: inline-flex;
+    }
+
+    &__label {
+
+        display: block;
+        margin-right: 12px;
+    }
+
+    &__input {
+        
+        @include transition (border-color);
+
+        width: 358px;
+        height: 50px;
+        padding: 16px 16px;
+        outline: transparent;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: calc(20 / 16);
+        color: rgba(255, 255, 255, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        background-color: var(--footer-bg-color);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        //transition-property: border-color;
+        //transition-duration: 250ms;
+        //transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            border-color: var(--accent-color);
+        }
+    }
+}
