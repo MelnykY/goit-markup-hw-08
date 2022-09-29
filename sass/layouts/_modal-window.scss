@@ -42,8 +42,8 @@
     &__button {
 
         @include transition (border-color);
-
         @include flex(flex, center, center);
+       
         position: absolute;
         padding: 0;
         width: 30px;
