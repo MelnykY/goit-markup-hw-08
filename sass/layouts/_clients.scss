@@ -50,6 +50,7 @@
     }
 
     &__icon {
+        
         @include transition (fill);
 
         fill: currentColor;
