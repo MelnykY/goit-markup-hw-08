@@ -13,22 +13,36 @@
     &__header--contrast {
         color: var(--black-color);
     }
-    
+
 }
 
 .footer__logo {
 
-    display: block;
+    display: flex;
+    justify-content: center;
     margin-bottom: 20px;
     font-family: $logoFont;
-    font-size: 26px;
-    line-height: calc(31 / 26);
+    font-size: 24px;
+    line-height: calc(28 / 24);
     color: var(--accent-color);
     font-weight: 700;
     letter-spacing: 0.03em;
 
     &--contrast {
         color: var(--white-color);
-        margin-bottom: 20px;
+        //margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+        font-size: 26px;
+        line-height: calc(31 / 26);
+        color: var(--accent-color);
+        letter-spacing: 0.03em;
+
+        &--contrast {
+            //color: var(--white-color);
+            margin-bottom: 20px;
+        }
     }
 }

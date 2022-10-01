@@ -11,4 +11,11 @@
         fill: currentColor;
         //transition: color, fill 2500s cubic-bezier(0.4, 0, 0.2, 1);
     }
+
+    &__container {
+
+        @include flex(flex, null, null);
+
+        //  display: flex;
+    }
 }

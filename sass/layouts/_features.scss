@@ -2,15 +2,42 @@
 
     &__list {
 
-        @include flex(flex, null, null);
-        
-        //display: flex;
-        gap: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (min-width: 768px) {
+             //  flex-wrap: wrap;
+               
+              //  align-items: center;
+               justify-content: center;
+                gap: 30px;
+            }
+
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+            align-items: start;
+            justify-content: center;
+            gap: 30px;
+        }
     }
 
     &__item {
 
-        width: 270px;
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+        }
 
         &:last-child {
             margin-right: 0;
@@ -19,16 +46,23 @@
 
     &__icon {
 
-        @include flex(flex, center, center);
-
-        width: 270px;
+        width: 450px;
         height: 120px;
         background-color: var(--secondary-bg-color);
         margin-bottom: 30px;
-        //display: flex;
-        //align-items: center;
-        //justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border-radius: 4px;
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            // @include flex(flex, center, center);
+            width: 270px;
+        }
     }
 
     &__title {
@@ -43,12 +77,13 @@
     }
 
     &__description {
-        
+
         font-size: 14px;
         line-height: calc(24 / 14);
         color: var(--main-color);
         letter-spacing: 0.03em;
         margin-right: 30px;
+        text-align: left;
 
         &:last-child {
             margin-right: 0;

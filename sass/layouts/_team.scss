@@ -13,10 +13,20 @@
         text-align: center;
     }
 
+
+
     &__list {
-        @include flex(flex, null, null);
-        //display: flex;
-        gap: 30px;
+       
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (min-width: 1200px) {
+            @include flex(flex, null, null);
+            //display: flex;
+            gap: 30px;
+        }
     }
 
     &__card {
