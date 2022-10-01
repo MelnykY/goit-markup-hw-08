@@ -1701,22 +1701,95 @@ a {
 
 .menu-toggle {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 10px;
+  right: 15px;
+  border: none;
+  background: transparent;
 }
 
-.mobile-menu {
-  list-style: none;
-  margin-bottom: auto;
+.mobile__nav {
+  position: absolute;
+  top: 48px;
+  left: 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+}
+.mobile__nav-link {
+  color: #212121;
+  text-decoration: none;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile__nav-link:hover {
+  color: #2196F3;
 }
 
-.mobile-contacts {
-  list-style: none;
+.mobile__contacts {
+  position: absolute;
+  bottom: 134px;
+  left: 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+  font-size: 34px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+}
+.mobile__contacts-link {
+  color: #757575;
+  text-decoration: none;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile__contacts-link:hover {
+  color: #2196F3;
 }
 
-.mobile-socials {
-  list-style: none;
+.mobile__socials {
+  position: absolute;
+  bottom: 48px;
+  left: 40px;
+  gap: 10px;
+}
+
+.mobile__socials-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  color: #2196F3;
+  letter-spacing: 0.02em;
+}
+.mobile__socials-link::after {
+  content: "|";
+  display: block;
+  width: 1px;
+  height: 22px;
+  color: rgba(33, 33, 33, 0.2);
+}
+
+.mobile__socials .mobile__socials-item:last-child a::after {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
