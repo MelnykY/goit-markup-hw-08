@@ -1,5 +1,11 @@
 .header__contacts {
 
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+
+
     @include flex(flex, center, null);
     //display: flex;
     //justify-content: center;
@@ -45,4 +51,22 @@
         //transition-duration: 250ms;
         //transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
+}
+
+.header__contacts--wrapper {
+    @media screen and (min-width: 767px) and (max-width: 1199px) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 21px 0;
+    }
+}
+
+.header__contacts-link {
+    @media screen and (min-width: 767px) and (max-width: 1199px) {
+           padding: 0;
+           align-items: center;
+           
+        }
 }
