@@ -8,30 +8,30 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: linear-gradient(var(--banner-gradient), var(--banner-gradient)), url('../../img/hero/sm-hero-img@1x.jpg');
+    background-image: linear-gradient(var(--banner-gradient), var(--banner-gradient)), url('../img/hero/sm-hero-img@1x.jpg');
 
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: linear-gradient(var(--banner-gradient), var(--banner-gradient)), url('../../img/hero/sm-hero-img@2x.jpg');
+        background-image: linear-gradient(var(--banner-gradient), var(--banner-gradient)), url('../img/hero/sm-hero-img@2x.jpg');
 
     }
 
     @media screen and (min-width: 481px) {
-        background-image: linear-gradient(var(--banner-gradient), var(--banner-gradient)), url('../../img/hero/md-hero-img@1x.jpg');
+        background-image: linear-gradient(var(--banner-gradient), var(--banner-gradient)), url('../img/hero/md-hero-img@1x.jpg');
 
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: linear-gradient(var(--banner-gradient), var(--banner-gradient)), url('../../img/hero/md-hero-img@2x.jpg');
+            background-image: linear-gradient(var(--banner-gradient), var(--banner-gradient)), url('../img/hero/md-hero-img@2x.jpg');
 
         }
     }
 
     @media screen and (min-width: 769px) {
-        background-image: linear-gradient(var(--banner-gradient), var(--banner-gradient)), url('../../img/hero/lg-hero-img@1x.jpg');
+        background-image: linear-gradient(var(--banner-gradient), var(--banner-gradient)), url('../img/hero/lg-hero-img@1x.jpg');
 
 
         @media (min-device-pixel-ratio: 2),
