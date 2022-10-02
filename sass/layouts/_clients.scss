@@ -20,8 +20,6 @@
         margin-bottom: 30px;
         color: var(--heading-color);
 
-       //@media screen and (min-width: 768px) {} same as mobile
-
         @media screen and (min-width: 1200px) {
             font-size: 36px;
             line-height: calc(42 / 36);
@@ -40,16 +38,10 @@
     }
 
     &__item {
-        width: 210px;
-        height: 92px;
 
-        @media screen and (min-width: 768px) {
-            width: 226px;
-            height: 92px;
-        }
+        @include item(5, var(--gap), 6);
 
         @media screen and (min-width: 1200px) {
-            width: 170px;
             height: 92px;
         }
     }

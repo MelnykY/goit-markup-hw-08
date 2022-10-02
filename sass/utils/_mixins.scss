@@ -9,3 +9,14 @@
     transition-duration: $time;
     transition-timing-function: $func;
 }
+
+@mixin list ($d: flex, $gap: var(--gap), $jc: null, $ai: null) {
+    display: $d;
+    gap: $gap;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin item ($q-gap, $gap, $q-item) {
+    flex-basis: calc((100% - #{$q-gap} * #{$gap}) / #{$q-item});
+}
