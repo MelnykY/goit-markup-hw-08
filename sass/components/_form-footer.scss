@@ -9,7 +9,7 @@
 
         @media screen and (min-width: 1200px) {
             align-items: flex-start;
-            
+
         }
 
 
@@ -17,6 +17,7 @@
 
     &__form {
 
+        width: 450px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -34,17 +35,18 @@
     &__label {
 
         display: block;
-        margin-right: 12px;
+        width: 100%;
+
+        @media screen and (min-width: 1200px) {
+            margin-right: 12px;
+        }
     }
 
     &__input {
 
-
-
-
         @include transition (border-color);
 
-        width: 450px;
+        width: 100%;
         height: 50px;
         padding: 16px 16px;
         outline: transparent;

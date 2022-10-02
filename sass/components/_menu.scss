@@ -1,5 +1,9 @@
 .menu___button {
 
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,7 +31,7 @@
     width: 100%;
     height: 100%;
     background-color: #fff;
-    //padding: 40px;
+    padding: 48px 40px;
 
     transform: translateX(100%);
     transition: 400ms;
@@ -35,25 +39,29 @@
     &.is-open {
         transform: translateX(0);
     }
+
+    display: flex;
+    flex-direction: column;
+
 }
 
 .menu-toggle {
     position: absolute;
-    top: 5%;
-    right: 10%;
+    top: 10px;
+    right: 15px;
 
     border: none;
     background: transparent;
 }
 
 .mobile__nav {
-    position: absolute;
-    top: 48px;
-    left: 40px;
+
+    margin-bottom: auto;
     flex-direction: column;
     gap: 32px;
 
     font-size: 40px;
+    font-weight: 500;
     line-height: calc(47 / 40);
     letter-spacing: 0.02em;
 
@@ -61,44 +69,41 @@
         color: #212121;
         text-decoration: none;
 
-        @include transition (color);
+    }
 
-        &:hover {
-            color: #2196F3;
-        }
+    &--current {
+        color: rgba(33, 150, 243, 1);
     }
 }
 
 .mobile__contacts {
-    position: absolute;
-    bottom: 134px;
-    left: 40px;
+
     flex-direction: column;
     gap: 32px;
 
-    font-size: 34px;
-    line-height: calc(47 / 40);
+    margin-bottom: 64px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: calc(28 / 24);
     letter-spacing: 0.02em;
 
     &-link {
         color: #757575;
         text-decoration: none;
+    }
 
-        @include transition (color);
-
-        &:hover {
-            color: #2196F3;
-        }
+    &--accent {
+        color: var(--accent-color);
+        font-size: 34px;
+        font-weight: 500;
+        line-height: calc(40 / 34);
+        letter-spacing: .02em;
     }
 }
 
 .mobile__socials {
-    position: absolute;
-    bottom: 48px;
-    left: 40px;
-
     gap: 10px;
-
+    flex-wrap: wrap;
 }
 
 .mobile__socials-link {
@@ -107,8 +112,9 @@
     gap: 10px;
 
     font-size: 18px;
+    font-weight: 500;
     line-height: calc(22 / 18);
-    color: #2196F3;
+    color: rgba(33, 150, 243, 1);
     letter-spacing: 0.02em;
 
     &::after {

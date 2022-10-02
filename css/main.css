@@ -366,7 +366,7 @@ a {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header__container {
     height: 60px;
     -webkit-box-align: center;
@@ -861,7 +861,7 @@ a {
   margin-right: 0;
 }
 .features__icon {
-  width: 450px;
+  width: 100%;
   height: 120px;
   background-color: var(--secondary-bg-color);
   margin-bottom: 30px;
@@ -1455,6 +1455,7 @@ a {
   }
 }
 .footer__form {
+  width: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1484,7 +1485,12 @@ a {
 }
 .footer__label {
   display: block;
-  margin-right: 12px;
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .footer__label {
+    margin-right: 12px;
+  }
 }
 .footer__input {
   -webkit-transition-property: border-color;
@@ -1493,7 +1499,7 @@ a {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  width: 450px;
+  width: 100%;
   height: 50px;
   padding: 16px 16px;
   outline: transparent;
@@ -1727,6 +1733,9 @@ a {
 }
 
 .menu___button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1757,10 +1766,18 @@ a {
   width: 100%;
   height: 100%;
   background-color: #fff;
+  padding: 48px 40px;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: 400ms;
   transition: 400ms;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .menu-container.is-open {
   -webkit-transform: translateX(0);
@@ -1769,71 +1786,60 @@ a {
 
 .menu-toggle {
   position: absolute;
-  top: 5%;
-  right: 10%;
+  top: 10px;
+  right: 15px;
   border: none;
   background: transparent;
 }
 
 .mobile__nav {
-  position: absolute;
-  top: 48px;
-  left: 40px;
+  margin-bottom: auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 32px;
   font-size: 40px;
+  font-weight: 500;
   line-height: 1.175;
   letter-spacing: 0.02em;
 }
 .mobile__nav-link {
   color: #212121;
   text-decoration: none;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mobile__nav-link:hover {
-  color: #2196F3;
+.mobile__nav--current {
+  color: rgb(33, 150, 243);
 }
 
 .mobile__contacts {
-  position: absolute;
-  bottom: 134px;
-  left: 40px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 32px;
-  font-size: 34px;
-  line-height: 1.175;
+  margin-bottom: 64px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.1666666667;
   letter-spacing: 0.02em;
 }
 .mobile__contacts-link {
   color: #757575;
   text-decoration: none;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mobile__contacts-link:hover {
-  color: #2196F3;
+.mobile__contacts--accent {
+  color: var(--accent-color);
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.1764705882;
+  letter-spacing: 0.02em;
 }
 
 .mobile__socials {
-  position: absolute;
-  bottom: 48px;
-  left: 40px;
   gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .mobile__socials-link {
@@ -1846,8 +1852,9 @@ a {
           flex-direction: row;
   gap: 10px;
   font-size: 18px;
+  font-weight: 500;
   line-height: 1.2222222222;
-  color: #2196F3;
+  color: rgb(33, 150, 243);
   letter-spacing: 0.02em;
 }
 .mobile__socials-link::after {
