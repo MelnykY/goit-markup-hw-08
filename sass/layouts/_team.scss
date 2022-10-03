@@ -16,16 +16,25 @@
 
 
     &__list {
-       
+
+      //  @include flex (flex, center, center);
+
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
+        gap: 30px;
+
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+
+        }
 
         @media screen and (min-width: 1200px) {
             @include flex(flex, null, null);
-            //display: flex;
-            gap: 30px;
+            @include item(3, 30px, 4);
         }
     }
 
