@@ -128,17 +128,43 @@
                 </h2>
                 <ul class="work__list list">
                     <li class="work__item">
-                        <img class="img" src="./img/img-box1.jpg" alt="HTML код набирають" width="370" height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="
+                                ./img/work/box1-img@1x.webp 1x,
+                                ./img/work/box1-img@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 1200px)" srcset="
+                                ./img/work/box1-img@1x.jpg 1x,
+                                ./img/work/box1-img@2x.jpg 2x" type="image/jpg">
+                            <img class="img" src="./img/work/box1-img@1x.jpg" alt="набирають розмітку HTML на планшеті" width="370" height="294">
+                        </picture>
                         <p class="work__text">Десктопні додатки</p>
                     </Li>
                     <li class="work__item">
-                        <img class="img" src="./img/img-box2.jpg" alt="UI/UX дизайнер сидить за монітором" width="370"
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="
+                                ./img/work/box2-img@1x.webp 1x,
+                                ./img/work/box2-img@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 768px)" srcset="
+                                ./img/work/box2-img@1x.jpg 1x,
+                                ./img/work/box2-img@2x.jpg 2x" type="image/jpg">
+                            <img class="img" src="./img/work/box1-img@2x.jpg" alt="UI/UX дизайнер сидить за монітором" width="370"
                             height="294">
+                        </picture>
                         <p class="work__text">Мобільні додатки</p>
                     </li>
                     <li class="work__item">
-                        <img class="img" src="./img/img-box3.jpg" alt="Підбір кольору у CSS палітрі" width="370"
+                        <picture>
+                            <source media="(min-width: 480px)" srcset="
+                                ./img/work/box3-img@1x.webp 1x,
+                                ./img/work/box3-img@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(min-width: 480px)" srcset="
+                                ./img/work/box3-img@1x.jpg 1x,
+                                ./img/work/box3-img@2x.jpg 2x"
+                                type="image/jpg">
+                            <img class="img" src="./img/work/box3-img@1x.jpg" alt="Підбір кольору у CSS палітрі" width="370"
                             height="294">
+                        </picture>
                         <p class="work__text">Дизайнерські рішення</p>
                     </li>
                 </ul>
