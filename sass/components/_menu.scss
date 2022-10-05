@@ -18,6 +18,13 @@
     padding: 0;
     margin-left: auto;
 
+    @include transition (fill);
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
+
     @media screen and (min-width: 768px) {
         display: none;
     }

@@ -8,14 +8,14 @@
 
     &__item {
 
-       // @include transition (color);
+        // @include transition (color);
 
         display: block;
         align-items: center;
         position: relative;
         font-size: 14px;
         line-height: calc(16 / 14);
-       // color: var(--heading-color);
+        // color: var(--heading-color);
         font-weight: 500;
         letter-spacing: 0.02em;
 
@@ -35,9 +35,11 @@
     &__list {
 
         @include flex(flex, null, null);
+        gap: 54px;
 
-        //display: flex;
-        gap: 50px;
+        @media screen and (min-width: 1200px) {
+            gap: 52px;
+        }
 
         & .link.current {
             color: var(--accent-color);

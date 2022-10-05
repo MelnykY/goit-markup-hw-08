@@ -412,7 +412,12 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 50px;
+  gap: 54px;
+}
+@media screen and (min-width: 1200px) {
+  .nav__list {
+    gap: 52px;
+  }
 }
 .nav__list .link.current {
   color: var(--accent-color);
@@ -1420,6 +1425,11 @@ a {
     padding: 20px 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .header__contacts--wrapper {
+    gap: 30px;
+  }
+}
 
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .header__contacts-link {
@@ -1558,14 +1568,16 @@ a {
   cursor: pointer;
   gap: 10px;
 }
+.footer__button:hover, .footer__button:focus {
+  background-color: var(--btn-accent-color);
+}
 @media screen and (max-width: 1199px) {
   .footer__button {
     margin: 0 auto;
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-}
-.footer__button:hover, .footer__button:focus {
-  background-color: var(--btn-accent-color);
 }
 @media screen and (min-width: 1200px) {
   .footer__button {
@@ -1907,6 +1919,15 @@ a {
   cursor: pointer;
   padding: 0;
   margin-left: auto;
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu___button:hover, .menu___button:focus {
+  fill: var(--accent-color);
 }
 @media screen and (min-width: 768px) {
   .menu___button {

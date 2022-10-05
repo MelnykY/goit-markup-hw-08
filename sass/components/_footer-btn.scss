@@ -1,11 +1,5 @@
 .footer__button {
 
-    @media screen and (max-width: 1199px) {
-        margin: 0 auto;
-        display: block;
-    }
-
-
     @include flex (inline-flex, center, center);
     @include transition (color, background-color);
 
@@ -26,9 +20,6 @@
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     cursor: pointer;
-    //transition-property: color, background-color;
-    //transition-duration: 250ms;
-    //transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     gap: 10px;
 
     &:hover,
@@ -36,9 +27,14 @@
         background-color: var(--btn-accent-color);
     }
 
+
+    @media screen and (max-width: 1199px) {
+        margin: 0 auto;
+        display: flex;
+    }
+
     @media screen and (min-width: 1200px) {
         height: 50px;
         min-width: 200px;
     }
-
 }
