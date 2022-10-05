@@ -9,10 +9,7 @@
 
         @media screen and (min-width: 1200px) {
             align-items: flex-start;
-
         }
-
-
     }
 
     &__form {
@@ -27,14 +24,13 @@
         @media screen and (min-width: 1200px) {
             @include flex (inline-flex, null, null);
             flex-direction: row;
-            //display: inline-flex;
             gap: 0;
         }
     }
 
     &__label {
 
-        display: block;
+       // display: block;
         width: 100%;
 
         @media screen and (min-width: 1200px) {
@@ -58,9 +54,6 @@
         border-radius: 4px;
         background-color: var(--footer-bg-color);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-        //transition-property: border-color;
-        //transition-duration: 250ms;
-        //transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover,
         &:focus {

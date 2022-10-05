@@ -8,7 +8,20 @@
 
     .project {
 
-        flex-basis: calc((100% - var(var(--indent)) * var(--items) - 1)) / var(--items);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - var(var(--indent)) * var(--items-md-screen) - 1)) / var(--items-md-screen);
+        }
+
+        @media screen and (min-width: 1200px) {
+            flex-basis: calc((100% - var(var(--indent)) * var(--items) - 1)) / var(--items);
+        }
+
+
 
         &__link {
             display: block;
@@ -43,6 +56,8 @@
         }
 
         &__description {
+
+            
             font-size: 16px;
             line-height: calc(30 / 16);
             color: var(--main-color);
