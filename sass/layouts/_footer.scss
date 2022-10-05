@@ -90,7 +90,7 @@
         }
 
         @media screen and (min-width: 1200px) {
-            margin-right: 115px; //to check!!!
+            margin-right: 93px; //to check!!!
         }
     }
 
@@ -137,6 +137,7 @@
 
         @media screen and (min-width: 1200px) {
             display: block;
+            width: 231px;
         }
     }
 
@@ -151,10 +152,6 @@
         color: var(--address-color);
         letter-spacing: 0.03em;
         font-style: normal;
-
-        //transition-property: color;
-        //transition-duration: 250ms;
-        //transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
         @media screen and (min-width: 1200px) {
             display: block;
@@ -173,8 +170,6 @@
                 margin-bottom: 0;
             }
         }
-
-
     }
 
     &__text {
@@ -187,8 +182,5 @@
         @media screen and (min-width: 1200px) {
             margin-bottom: 0;
         }
-
     }
-
-
 }
