@@ -52,6 +52,12 @@
 
     border: none;
     background: transparent;
+    @include transition (fill);
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
 }
 
 .mobile__nav {
@@ -68,7 +74,13 @@
     &-link {
         color: #212121;
         text-decoration: none;
+        @include transition (color);
 
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+
+        }
     }
 
     &--current {
@@ -90,6 +102,14 @@
     &-link {
         color: #757575;
         text-decoration: none;
+
+        @include transition (color);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+
+        }
     }
 
     &--accent {

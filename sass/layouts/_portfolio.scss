@@ -21,8 +21,6 @@
             flex-basis: calc((100% - var(var(--indent)) * var(--items) - 1)) / var(--items);
         }
 
-
-
         &__link {
             display: block;
 
@@ -41,6 +39,7 @@
         }
 
         &__text {
+            flex-grow: 1; // must be checked!!!
             padding: 20px 24px;
             border: 1px solid var(--project-border-color);
             border-top: none;
@@ -53,11 +52,11 @@
             font-weight: 700;
             letter-spacing: 0.06em;
             margin-bottom: 4px;
+            margin-top: 0;
+
         }
 
         &__description {
-
-            
             font-size: 16px;
             line-height: calc(30 / 16);
             color: var(--main-color);

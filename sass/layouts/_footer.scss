@@ -12,17 +12,17 @@
     }
 
     &__container {
-        max-width: 1170px; //??
+        //max-width: 1170px; //??
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        //justify-content: center;
 
         @media screen and (min-width: 1200px) {
             @include flex(flex, null, baseline);
 
             flex-direction: row;
-            //justify-content: space-between; //??
+            //justify-content: flex-start; 
             //added 
             //display: flex;
             //align-items: baseline;
@@ -55,7 +55,8 @@
 
         @media screen and (min-width: 1200px) {
             justify-content: flex-start;
-            margin-right: auto;
+            //margin-right: auto;
+            align-items: flex-start;
         }
     }
 
@@ -86,16 +87,29 @@
 
         @media screen and (min-width: 768px) {
             flex-direction: row;
-
         }
 
         @media screen and (min-width: 1200px) {
-            display: flex;
-            justify-content: space-between; //????
-            //margin-right: auto;
-
+            margin-right: 115px; //to check!!!
         }
+    }
 
+    &__contact {
+
+
+        @include transition (color);
+
+        margin-bottom: 9px;
+        font-size: 14px;
+        line-height: calc(24 / 14);
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            //align-items: flex-start;
+            margin-left: auto;
+        }
     }
 
     .footer__icon {
@@ -176,24 +190,5 @@
 
     }
 
-    &__contact {
 
-
-        @include transition (color);
-
-        margin-bottom: 9px;
-        font-size: 14px;
-        line-height: calc(24 / 14);
-        color: rgba(255, 255, 255, 0.6);
-        text-decoration: none;
-
-        //transition-property: color;
-        //transition-duration: 250ms;
-        //transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        @media screen and (min-width: 1200px) {
-            display: flex;
-            align-items: flex-start;
-            margin-left: auto;
-        }
-    }
 }
