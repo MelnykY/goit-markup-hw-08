@@ -1884,6 +1884,7 @@ a {
 }
 .overlay::-webkit-scrollbar {
   width: 10px;
+  display: none;
 }
 .overlay::-webkit-scrollbar-track {
   background-color: rgba(33, 150, 243, 0.9019607843);
