@@ -1,9 +1,9 @@
 .portfolio__button {
 
-    @include flex(flex, center, null);
+    @include flex(flex, null, null);
 
-    //display: flex;
-    //justify-content: center;
+    display: flex;
+    justify-content: center;
     gap: 8px;
     margin-bottom: 50px;
 
@@ -11,6 +11,8 @@
         flex-wrap: wrap;
         justify-content: flex-start;
         width: 362px;
+        row-gap: 15px;
+        margin-bottom: 40px;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -33,10 +35,7 @@
         height: 38px;
         cursor: pointer;
         padding: 6px 22px;
-        //transition-property: color, background-color, box-shadow;
-        //transition-duration: 250ms;
-        //transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+      
         &:hover,
         &:focus {
             background-color: var(--btn-filter-color);

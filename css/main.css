@@ -1277,7 +1277,6 @@ a {
   font-weight: 700;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
-  margin-top: 0;
 }
 .portfolio .project__description {
   font-size: 16px;
@@ -1491,6 +1490,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1505,6 +1505,8 @@ a {
         -ms-flex-pack: start;
             justify-content: flex-start;
     width: 362px;
+    row-gap: 15px;
+    margin-bottom: 40px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {

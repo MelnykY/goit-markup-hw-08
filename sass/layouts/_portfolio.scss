@@ -39,10 +39,13 @@
         }
 
         &__text {
+
             flex-grow: 1; // must be checked!!!
             padding: 20px 24px;
             border: 1px solid var(--project-border-color);
             border-top: none;
+
+
         }
 
         &__title {
@@ -52,8 +55,7 @@
             font-weight: 700;
             letter-spacing: 0.06em;
             margin-bottom: 4px;
-            margin-top: 0;
-
+            
         }
 
         &__description {
