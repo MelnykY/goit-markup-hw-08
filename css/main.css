@@ -776,15 +776,6 @@ a {
   background-image: linear-gradient(var(--banner-gradient), var(--banner-gradient)), url("../img/hero/sm-hero-img@1x.jpg");
   height: 400px;
 }
-@media screen and (min-width: 768px) {
-  .hero {
-    margin-left: auto;
-    margin-right: auto;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--banner-gradient)), to(var(--banner-gradient))), url("../img/hero/md-hero-img@1x.jpg");
-    background-image: linear-gradient(var(--banner-gradient), var(--banner-gradient)), url("../img/hero/md-hero-img@1x.jpg");
-    background-repeat: no-repeat;
-  }
-}
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(var(--banner-gradient)), to(var(--banner-gradient))), url("../img/hero/sm-hero-img@2x.jpg");
@@ -805,14 +796,14 @@ a {
 }
 @media screen and (min-width: 769px) and (max-width: 1199px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--banner-gradient)), to(var(--banner-gradient))), url("../img/hero/lg-hero-img@1x.jpg");
-    background-image: linear-gradient(var(--banner-gradient), var(--banner-gradient)), url("../img/hero/lg-hero-img@1x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--banner-gradient)), to(var(--banner-gradient))), url("../img/hero/md-hero-img@1x.jpg");
+    background-image: linear-gradient(var(--banner-gradient), var(--banner-gradient)), url("../img/hero/md-hero-img@1x.jpg");
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (max-width: 1199px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--banner-gradient)), to(var(--banner-gradient))), url("../img/hero/lg-hero-img@2x.jpg");
-    background-image: linear-gradient(var(--banner-gradient), var(--banner-gradient)), url("../img/hero/lg-hero-img@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--banner-gradient)), to(var(--banner-gradient))), url("../img/hero/md-hero-img@2x.jpg");
+    background-image: linear-gradient(var(--banner-gradient), var(--banner-gradient)), url("../img/hero/md-hero-img@2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -823,6 +814,12 @@ a {
     margin: 0 auto;
     background-image: -webkit-gradient(linear, left top, left bottom, from(var(--banner-gradient)), to(var(--banner-gradient))), url("../img/hero/lg-hero-img@1x.jpg");
     background-image: linear-gradient(var(--banner-gradient), var(--banner-gradient)), url("../img/hero/lg-hero-img@1x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--banner-gradient)), to(var(--banner-gradient))), url("../img/hero/lg-hero-img@2x.jpg");
+    background-image: linear-gradient(var(--banner-gradient), var(--banner-gradient)), url("../img/hero/lg-hero-img@2x.jpg");
   }
 }
 .hero__title {
@@ -1517,8 +1514,10 @@ a {
   }
 }
 
-.header__contacts--wrapper {
-  display: none;
+@media screen and (max-width: 767px) {
+  .header__contacts--wrapper {
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header__contacts--wrapper {
@@ -2005,7 +2004,7 @@ a {
           transform: translateY(101%);
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 63px 24px;
+  padding: 0 24px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5555555556;
@@ -2013,11 +2012,26 @@ a {
   letter-spacing: 0.03em;
   color: var(--white-color);
   overflow-y: scroll;
-  overflow-x: hidden;
 }
 .overlay-text {
-  padding-left: 24px;
-  padding-right: 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5555555556;
+}
+@media screen and (max-width: 767px) {
+  .overlay-text {
+    padding-top: 77px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .overlay-text {
+    padding-top: 49px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .overlay-text {
+    padding-top: 63px;
+  }
 }
 .overlay::-webkit-scrollbar {
   width: 10px;

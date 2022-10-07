@@ -34,6 +34,7 @@
         }
 
         @media screen and (min-width: 768px) and (max-width: 1199px) {
+            
             align-items: center;
             font-size: 12px;
             line-height: calc(14 / 12);
@@ -71,7 +72,11 @@
 }
 
 .header__contacts--wrapper {
-    display: none;
+
+    @media screen and (max-width: 767px) {
+         display: none;
+    }
+   
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         display: flex;
