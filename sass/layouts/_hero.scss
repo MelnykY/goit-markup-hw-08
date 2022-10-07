@@ -12,10 +12,11 @@
 
     height: 400px;
 
-    // @media screen and (min-width: 768px) and (max-width: 1199px) {
-    //     background-position: 0%;
-    //  background-size: cover;
-    //   }
+    @media screen and (min-width: 768px) {
+        margin-left: auto;
+        margin-right: auto;
+        background-image: linear-gradient(var(--banner-gradient), var(--banner-gradient)), url('../img/hero/md-hero-img@1x.jpg') background-repeat: no-repeat;
+    }
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
