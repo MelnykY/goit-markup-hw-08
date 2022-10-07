@@ -812,8 +812,8 @@ a {
     padding: 200px 0;
     max-width: 1600px;
     margin: 0 auto;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--banner-gradient)), to(var(--banner-gradient))), url("../../img/hero/lg-hero-img@1x.jpg");
-    background-image: linear-gradient(var(--banner-gradient), var(--banner-gradient)), url("../../img/hero/lg-hero-img@1x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--banner-gradient)), to(var(--banner-gradient))), url("../img/hero/lg-hero-img@1x.jpg");
+    background-image: linear-gradient(var(--banner-gradient), var(--banner-gradient)), url("../img/hero/lg-hero-img@1x.jpg");
   }
 }
 .hero__title {
