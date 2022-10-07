@@ -1,73 +1,74 @@
 .portfolio {
 
-    @include flex(flex, null, null);
-
-    //display: flex;
+    display: flex;
     flex-wrap: wrap;
     gap: 30px;
+}
 
-    .project {
+.project {
 
+    display: flex;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-basis: calc((100% - var(--indent)) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - var(var(--indent)) * var(--items) - 1)) / var(--items);
+    }
+
+    &__link {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
 
-        @media screen and (min-width: 768px) {
-            flex-basis: calc((100% - var(var(--indent)) * var(--items-md-screen) - 1)) / var(--items-md-screen);
-        }
+        &:hover,
+        &:focus {
+            border: 1px var(--project-border-color);
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+                0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
 
-        @media screen and (min-width: 1200px) {
-            flex-basis: calc((100% - var(var(--indent)) * var(--items) - 1)) / var(--items);
-        }
-
-        &__link {
-            display: block;
-
-            &:hover,
-            &:focus {
-                border: 1px var(--project-border-color);
-                box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-                    0px 4px 4px rgba(0, 0, 0, 0.06),
-                    1px 4px 6px rgba(0, 0, 0, 0.16);
-
-                & .overlay,
-                & .overlay {
-                    transform: translateX(0);
-                }
+            & .overlay,
+            & .overlay {
+                transform: translateX(0);
             }
         }
+    }
 
-        &__text {
+    &__text {
+        padding: 20px 24px;
+        border: 1px solid var(--project-border-color);
+        border-top: none;
+        flex-grow: 1;
+    }
 
-            flex-grow: 1; // must be checked!!!
-            padding: 20px 24px;
-            border: 1px solid var(--project-border-color);
-            border-top: none;
+    &__title {
+        font-size: 18px;
+        line-height: calc(36 / 18);
+        color: var(--heading-color);
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        margin-bottom: 4px;
+    }
 
+    &__description {
+        font-size: 16px;
+        line-height: calc(30 / 16);
+        color: var(--main-color);
+        letter-spacing: 0.03em;
+    }
 
-        }
-
-        &__title {
-            font-size: 18px;
-            line-height: calc(36 / 18);
-            color: var(--heading-color);
-            font-weight: 700;
-            letter-spacing: 0.06em;
-            margin-bottom: 4px;
-            
-        }
-
-        &__description {
-            font-size: 16px;
-            line-height: calc(30 / 16);
-            color: var(--main-color);
-            letter-spacing: 0.03em;
-        }
-
-        &__thumb {
-            position: relative;
-            overflow: hidden;
-        }
+    &__thumb {
+        position: relative;
+        overflow: hidden;
     }
 }
+
+// @media screen and (min-width: 768px) {
+// width: 354px;
+//  font-size: 17px;
+//  }
+
+// @media screen and (min-width: 1200px) {
+//  width: 370px;
+// }

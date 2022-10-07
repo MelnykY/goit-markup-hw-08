@@ -12,20 +12,17 @@
     }
 
     &__container {
-        //max-width: 1170px; //??
+
         display: flex;
         flex-direction: column;
         align-items: center;
-        //justify-content: center;
 
         @media screen and (min-width: 1200px) {
-            @include flex(flex, null, baseline);
-
+            display: flex;
             flex-direction: row;
-            //justify-content: flex-start; 
-            //added 
-            //display: flex;
-            //align-items: baseline;
+            align-items: center;
+            justify-content: space-between;
+            align-items: baseline;
         }
     }
 
@@ -35,13 +32,10 @@
         margin-bottom: 60px;
 
         @media screen and (min-width: 768px) {
-            margin-right: 165px;
+            margin-bottom: 0px;
         }
 
-        @media screen and (min-width: 1200px) {
-            margin-right: 70px;
-            justify-content: space-between;
-        }
+        @media screen and (min-width: 1200px) {}
     }
 
     &__socials {
@@ -55,7 +49,7 @@
 
         @media screen and (min-width: 1200px) {
             justify-content: flex-start;
-            //margin-right: auto;
+            margin: 0px;
             align-items: flex-start;
         }
     }
@@ -66,13 +60,11 @@
         justify-content: center;
         font-size: 14px;
         text-transform: uppercase;
-        line-height: calc(16.41 / 14);
+        line-height: calc(16 / 14);
         color: var(--white-color);
         font-weight: 700;
         letter-spacing: 3%;
         margin-bottom: 20px;
-
-
 
         @media screen and (min-width: 1200px) {
             display: block;
@@ -86,29 +78,16 @@
         align-items: baseline;
 
         @media screen and (min-width: 768px) {
-            flex-direction: row;
-        }
-
-        @media screen and (min-width: 1200px) {
-            margin-right: 93px; //to check!!!
-        }
-    }
-
-    &__contact {
-
-
-        @include transition (color);
-
-        margin-bottom: 9px;
-        font-size: 14px;
-        line-height: calc(24 / 14);
-        color: rgba(255, 255, 255, 0.6);
-        text-decoration: none;
-
-        @media screen and (min-width: 1200px) {
             display: flex;
-            //align-items: flex-start;
-            margin-left: auto;
+            flex-direction: row;
+            gap: 165px;
+            margin-bottom: 60px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 0;
+            gap: 70px;
+            justify-content: space-between;
         }
     }
 

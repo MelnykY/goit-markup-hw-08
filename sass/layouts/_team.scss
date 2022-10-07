@@ -1,35 +1,32 @@
 .team {
 
     background-color: var(--secondary-bg-color);
-    padding-bottom: 94px;
+    padding-bottom: 60px;
 
     &__title {
-        font-size: 36px;
-        line-height: calc(42 / 36);
-        color: var(--heading-color);
+        font-size: 28px;
+        line-height: calc(33 / 28);
         font-weight: 700;
+        color: var(--heading-color);
         letter-spacing: 0.03em;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         text-align: center;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 36px;
+            line-height: calc(42 / 36);
+            margin-bottom: 50px;
+        }
     }
 
-
-
     &__list {
-
-      //  @include flex (flex, center, center);
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
-
+        display: block;
 
         @media screen and (min-width: 768px) {
+            @include flex (flex, center, center);
             flex-direction: row;
             flex-wrap: wrap;
-
+            gap: 30px;
         }
 
         @media screen and (min-width: 1200px) {
@@ -42,29 +39,49 @@
         background-color: var(--white-color);
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
-    }
 
+        max-width: 450px;
+
+        @media screen and (max-width: 767px) {
+            margin: 0 auto 30px auto;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+        }
+    }
 }
 
 .card {
 
     &__text {
-        padding: 30px;
         text-align: center;
+        padding-top: 30px;
+        padding-bottom: 24px;
+
+        @media screen and (min-width: 1200px) {
+            //padding: 30px;
+            padding: 30px 32px;
+        }
     }
 
     &__title {
         font-size: 16px;
-        line-height: calc(19 / 16);
         color: var(--heading-color);
         font-weight: 500;
         letter-spacing: 0.03em;
+        line-height: calc(19 / 16);
         margin-bottom: 10px;
     }
 
     &__description {
         font-size: 16px;
         line-height: calc(19 / 16);
+        font-weight: 400;
         color: var(--main-color);
         letter-spacing: 0.03em;
         margin-bottom: 16px;

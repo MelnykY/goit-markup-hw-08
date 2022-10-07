@@ -4,6 +4,7 @@
 
     @media screen and (min-width: 1200px) {
         padding-top: 94px;
+        padding-bottom: 94px;
     }
 
     &__list {
@@ -49,6 +50,8 @@
     }
 
     &__link {
+
+
         @include flex(flex, center, center);
         @include transition (color, border-color);
 
@@ -56,7 +59,7 @@
         height: 100%;
         border: 1px solid var(--icon-bg-color);
         border-radius: 4px;
-   
+
         &:hover,
         &:focus {
             fill: var(--accent-color);
@@ -72,7 +75,7 @@
         color: rgba(175, 177, 184, 1);
         width: 106px;
         height: 60px;
-      
+
         .clients__link:hover &,
         .clients__link:focus & {
             fill: var(--accent-color);

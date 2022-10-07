@@ -4,17 +4,22 @@
 
         display: inline-block;
         width: 100%;
-       // flex-direction: column;
-       // justify-content: center;
-        //align-items: center;
 
+        @include transition (color);
+        
+            margin-bottom: 9px;
+            font-size: 14px;
+            line-height: calc(24 / 14);
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+       
         @media screen and (min-width: 480px) {
             width: 450px;
         }
 
         @media screen and (min-width: 1200px) {
-            align-items: flex-start;
-            margin-left: 0;
+            width: 570px;
+            margin-bottom: 0;
         }
     }
 
@@ -36,8 +41,7 @@
             @include flex (inline-flex, null, null);
             flex-direction: row;
             gap: 12px;
-            width: 568px;
-            
+            min-width: 570px;
         }
     }
 

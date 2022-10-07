@@ -1,14 +1,19 @@
 .form {
+    height: 100%;
 
     &__title {
 
         display: block;
         text-align: center;
+        color: rgba(33, 33, 33, 1);
+        font-size: 20px;
         margin-bottom: 12px;
         font-weight: 700;
-        font-size: 20px;
-        line-height: calc(23 / 20);
-        color: rgba(33, 33, 33, 1);
+        line-height: calc(30 / 20);
+
+        @media screen and (min-width: 1200px) {
+            line-height: calc(23 / 20);
+        }
     }
 
     &__group {
@@ -26,6 +31,10 @@
         &:focus {
             fill: var(--accent-color);
         }
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
     }
 
     &__input--register {
@@ -40,9 +49,6 @@
         border-radius: 4px;
         margin-top: 4px;
         outline: transparent;
-        //transition-property: border-color;
-        //transition-duration: 250ms;
-        //transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover,
         &:focus {
@@ -62,6 +68,8 @@
         line-height: calc(14 / 12);
         letter-spacing: 0.01em;
         color: var(--main-color);
+
+        //  @media screen and (min-width: 1200px) {}
     }
 
 
@@ -87,12 +95,16 @@
 
         &--agreement-text {
             font-weight: 400;
-            font-size: 14px;
+            font-size: 12px;
             line-height: calc(14 / 12);
             letter-spacing: 0.03em;
-            color: rgba(117, 117, 117, 1)
-        }
 
+            color: rgba(117, 117, 117, 1);
+
+            @media screen and (min-width: 1200px) {
+                font-size: 14px;
+            }
+        }
     }
 
     &__label {
@@ -149,7 +161,6 @@
         &:focus {
             background-color: var(--btn-accent-color);
         }
-        
     }
 
 
@@ -196,8 +207,6 @@
             }
         }
 
-        &--form {
-            margin-bottom: 10px;
-        }
+        //&--form {margin-bottom: 10px;}
     }
 }

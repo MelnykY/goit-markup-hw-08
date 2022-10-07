@@ -1,13 +1,15 @@
 .socials {
 
     &__list {
-        
-        @include flex(flex, space-around, center);
 
-        //display: flex;
-        //justify-content: space-around;
-        //align-items: center;
+        @include flex(flex, null, center);
         gap: 10px;
+        justify-content: center;
+
+        @media screen and (min-width: 1200px) {
+            gap: 10px;
+            @include flex(flex, space-around, center)
+        }
     }
 
     &__item {
@@ -23,9 +25,6 @@
         //align-items: center;
         //justify-content: center;
         fill: rgba(175, 177, 184, 1);
-        //transition-property: fill, background-color;
-        //transition-duration: 250ms;
-        //transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover,
         &:focus {
