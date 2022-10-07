@@ -2020,6 +2020,7 @@ a {
   overflow-y: scroll;
 }
 .overlay-text {
+  padding: auto 0;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5555555556;
@@ -2040,17 +2041,28 @@ a {
   }
 }
 .overlay::-webkit-scrollbar {
-  width: 10px;
+  width: 30px;
   display: none;
 }
 .overlay::-webkit-scrollbar-track {
-  background-color: rgba(33, 150, 243, 0.9019607843);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 .overlay::-webkit-scrollbar-thumb {
   background: #fff;
 }
 .overlay::-webkit-scrollbar-thumb:hover {
   background-color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 768px) {
+  .overlay {
+    width: 354px;
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .overlay {
+    width: 370px;
+  }
 }
 
 .menu___button {
