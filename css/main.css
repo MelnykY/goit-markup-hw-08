@@ -1290,12 +1290,6 @@ a {
         flex-basis: calc((100% - var(--indent)) / 2);
   }
 }
-@media screen and (min-width: 1200px) {
-  .project {
-    -ms-flex-preferred-size: calc(100% - var(var(--indent)) * var(--items) - 1)/var(--items);
-        flex-basis: calc(100% - var(var(--indent)) * var(--items) - 1)/var(--items);
-  }
-}
 .project__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1342,7 +1336,6 @@ a {
 }
 .project__img {
   max-width: 100%;
-  display: block;
 }
 
 .container {

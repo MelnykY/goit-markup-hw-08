@@ -14,9 +14,7 @@
         flex-basis: calc((100% - var(--indent)) / 2);
     }
 
-    @media screen and (min-width: 1200px) {
-        flex-basis: calc((100% - var(var(--indent)) * var(--items) - 1)) / var(--items);
-    }
+   
 
     &__link {
         display: flex;
@@ -68,6 +66,5 @@
 
     &__img {
         max-width: 100%;
-        display: block;
     }
 }
