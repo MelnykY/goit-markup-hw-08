@@ -1340,6 +1340,9 @@ a {
   position: relative;
   overflow: hidden;
 }
+.project__img {
+  max-width: 100%;
+}
 
 .container {
   max-width: 480px;

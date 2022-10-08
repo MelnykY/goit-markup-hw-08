@@ -37,6 +37,7 @@
     }
 
     &__text {
+        
         padding: 20px 24px;
         border: 1px solid var(--project-border-color);
         border-top: none;
@@ -50,6 +51,7 @@
         font-weight: 700;
         letter-spacing: 0.06em;
         margin-bottom: 4px;
+       
     }
 
     &__description {
@@ -62,5 +64,9 @@
     &__thumb {
         position: relative;
         overflow: hidden;
+    }
+
+    &__img {
+        max-width: 100%;
     }
 }
