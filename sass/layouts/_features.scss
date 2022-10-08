@@ -42,7 +42,7 @@
             width: 270px;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
             margin-bottom: 0;
         }
@@ -79,11 +79,9 @@
         margin-bottom: 10px;
         text-align: center;
 
-        @media screen and (min-width: 481px) and (min-width: 1199px){
+        @media screen and (min-width: 768px) {
             text-align: left;   
         }
-
-
 
     }
 
