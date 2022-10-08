@@ -1342,6 +1342,7 @@ a {
 }
 .project__img {
   max-width: 100%;
+  display: block;
 }
 
 .container {
